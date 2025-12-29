@@ -1,0 +1,28 @@
+/* CSS Variables */
+:root {
+    /* Colors */
+    --color-bg-primary: #1e103f; /* Deep Purple Background */
+    --color-bg-secondary: #2d1b55; /* Slightly lighter for form/cards */
+    --color-accent: #f8dca0; /* Gold/Beige for pill */
+    --color-text-primary: #ffffff;
+    --color-text-secondary: #d1d5db;
+    --color-text-dark: #1f2937;
+    
+    --color-button-icon-bg: #2e0f5b; 
+    --color-input-bg: rgba(255, 255, 255, 0.1);
+    --color-input-border: rgba(255, 255, 255, 0.2);
+
+    /* Typography */
+    --font-primary: 'Outfit', sans-serif;
+    
+    /* Spacing */
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 1.5rem;
+    --spacing-lg: 2rem;
+    --spacing-xl: 3rem;
+
+    /* Layout */
+    --container-width: 1440px;
+    --header-height: 80px;
+}

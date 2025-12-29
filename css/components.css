@@ -1,0 +1,182 @@
+/* Components */
+
+/* Buttons */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    transition: transform 0.2s, box-shadow 0.2s;
+    letter-spacing: 0.05em;
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+.btn-register {
+    display: inline-flex;
+    height: 44px;
+    text-decoration: none;
+    border-radius: 4px;
+    overflow: hidden;
+    /* Box shadow from image */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.btn-register__icon {
+    width: 44px;
+    height: 44px;
+    background-color: #2e0f5b; /* Dark Deep Purple */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+}
+
+.btn-register__icon svg {
+    width: 18px;
+    height: 18px;
+    /* Removed rotation to match Submit button (pointing top-right) */
+}
+
+.btn-register__text {
+    height: 44px;
+    padding: 0 1.5rem;
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    color: #2e0f5b;
+    font-weight: 700;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    border: 1px solid #2e0f5b;
+    border-left: none; /* Combine seamlessly */
+}
+
+.btn-submit {
+    display: flex;
+    align-items: center; /* Centers text bar vertically relative to icon */
+    width: 60%;
+    margin-top: 1.5rem;
+    background: transparent;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-submit__icon {
+    width: 56px;
+    height: 56px;
+    background-color: #ffffff; /* White box */
+    color: #2e0f5b; /* Dark purple arrow */
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 2; /* Sit on top */
+    flex-shrink: 0;
+}
+
+.btn-submit__icon svg {
+    width: 20px;
+    height: 20px;
+    stroke: currentColor;
+    /* Ensure arrow rotation if needed, currently points top-right in HTML svg points */
+}
+
+.btn-submit__text {
+    background-color: rgba(255, 255, 255, 0.1); /* Translucent purple/glass effect */
+    color: #ffffff;
+    flex-grow: 1;
+    height: 56px; /* Matched to icon height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 6px 6px 0;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 0.05em;
+    border: 1px solid #ffffff;
+    border-left: none;
+    margin-left: -4px;
+    z-index: 1;
+}
+
+
+/* Forms */
+.form-card {
+    background-color: rgba(45, 27, 85, 0.6); /* Semi-transparent background */
+    backdrop-filter: blur(10px);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    border: 1px solid rgba(255,255,255,0.05);
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-input {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    background-color: var(--color-input-bg);
+    border: 1px solid var(--color-input-border);
+    border-radius: 6px;
+    color: #ffffff;
+    font-size: 0.95rem;
+    transition: border-color 0.2s;
+}
+
+.form-input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+/* Pills/Badges */
+.location-pill {
+    background-color: var(--color-accent);
+    color: #3f2e10; /* Dark brownish text for contrast on gold */
+    padding: 1rem 2rem;
+    border-radius: 50px; /* Full pill shape */
+    display: inline-flex;
+    align-items: center;
+    gap: 1.5rem;
+    font-weight: 600;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    margin-top: 2rem;
+    max-width: 100%;
+}
+
+.location-pill__divider {
+    width: 1px;
+    height: 24px;
+    background-color: rgba(63, 46, 16, 0.3);
+}
+
+.location-pill__content {
+    display: flex;
+    flex-direction: column;
+}
+
+.location-pill__title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #2e1065;
+}
+
+.location-pill__subtitle {
+    font-size: 0.9rem;
+    color: #4b3818;
+}

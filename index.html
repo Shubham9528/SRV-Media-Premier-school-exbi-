@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premier Schools Exhibition</title>
+    
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Font Awesome (for icons) - Optional, using CDNs or placeholders? 
+         User said "no frameworks". I'll use SVG icons inline for best practice without external dict.
+    -->
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="container navbar__container">
+            <a href="#" class="navbar__logo">
+                <img src="assets/logos/logo-2.png" alt="Premier Schools Exhibition" class="logo-img">
+            </a>
+            
+            <a href="#register" class="btn btn-register">
+                <span class="btn-register__icon">
+                    <!-- Simple Arrow Icon SVG -->
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="7" y1="17" x2="17" y2="7"></line>
+                        <polyline points="7 7 17 7 17 17"></polyline>
+                    </svg>
+                </span>
+                <span class="btn-register__text">REGISTER NOW</span>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero__content-grid">
+                    
+                    <!-- Left Column: Text -->
+                    <div class="hero__text-col">
+                        <h1 class="hero__headline">
+                            <span>Discover Gurugram’s</span>
+                            <span class="highlight">Top 30+ Schools</span>
+                        </h1>
+                        <p class="hero__subheadline">ALL IN ONE PLACE</p>
+                        
+                        <div class="location-pill">
+                            <div class="location-pill__content">
+                                <span class="location-pill__title">Apparel House,</span>
+                                <span class="location-pill__subtitle">Sec 44, Gurugram</span>
+                            </div>
+                            <div class="location-pill__divider"></div>
+                            <div class="location-pill__content">
+                                <span class="location-pill__title">2-3 August 2025</span>
+                                <span class="location-pill__subtitle">Sat-Sun | 10AM - 6PM</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Center Column: Visuals (Slider) -->
+                    <div class="hero__visual-col">
+                        <div class="hero__image-column">
+                            <div class="hero__image-pill">
+                                <!-- Placeholder Image -->
+                                <img src="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=300&h=500&fit=crop" alt="Student">
+                            </div>
+                            <div class="hero__image-pill">
+                                <img src="https://images.unsplash.com/photo-1544717297-fa95b6ee9643?w=300&h=500&fit=crop" alt="Student">
+                            </div>
+                        </div>
+                        <div class="hero__image-column">
+                            <div class="hero__image-pill">
+                                <img src="https://images.unsplash.com/photo-1571210862729-78a52d3779a2?w=300&h=500&fit=crop" alt="Student">
+                            </div>
+                            <div class="hero__image-pill">
+                                <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=300&h=500&fit=crop" alt="Student">
+                            </div>
+                        </div>
+
+                        <div class="hero__image-column">
+                            <div class="hero__image-pill">
+                                <img src="https://images.unsplash.com/photo-1571210862729-78a52d3779a2?w=300&h=500&fit=crop" alt="Student">
+                            </div>
+                            <div class="hero__image-pill">
+                                <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=300&h=500&fit=crop" alt="Student">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Form -->
+                    <div class="hero__form-col">
+                        <div class="form-card">
+                            <h2 class="form-heading">Enquire Now</h2>
+                            <form action="#" method="POST">
+                                <div class="form-group">
+                                    <input type="text" class="form-input" placeholder="Parent's Name" aria-label="Parent's Name" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="tel" class="form-input" placeholder="Phone number" aria-label="Phone number" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-input" placeholder="Which grade are you looking for?" aria-label="Grade" required>
+                                </div>
+                                
+                                <button type="submit" class="btn btn-submit">
+                                    <span class="btn-submit__icon">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2e0f5b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <line x1="7" y1="17" x2="17" y2="7"></line>
+                                            <polyline points="7 7 17 7 17 17"></polyline>
+                                        </svg>
+                                    </span>
+                                    <span class="btn-submit__text">SUBMIT</span>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Participation Section -->
+        <section class="participation">
+            <div class="container">
+                <!-- Stats Row -->
+                <div class="stats-grid">
+                    <div class="stats-item">
+                        <div class="stats-item__wreath">
+                            <!-- Leaf Image -->
+                            <img src="assets/images/leaf.png" alt="Wreath">
+                        </div>
+                        <div class="stats-item__content">
+                            <span class="stats-item__highlight">Trusted by</span>
+                            <strong class="stats-item__number">1 Million+</strong>
+                            <span class="stats-item__label">Parents</span>
+                        </div>
+                    </div>
+                    
+                    <div class="stats-item">
+                        <div class="stats-item__wreath">
+                            <img src="assets/images/leaf.png" alt="Wreath">
+                        </div>
+                        <div class="stats-item__content">
+                            <strong class="stats-item__number">22+</strong>
+                            <span class="stats-item__highlight">Years</span>
+                            <span class="stats-item__label">of Legacy</span>
+                        </div>
+                    </div>
+
+                    <div class="stats-item">
+                        <div class="stats-item__wreath">
+                            <img src="assets/images/leaf.png" alt="Wreath">
+                        </div>
+                        <div class="stats-item__content">
+                            <strong class="stats-item__number">500+</strong>
+                            <span class="stats-item__highlight">Participating</span>
+                            <span class="stats-item__label">Schools</span>
+                        </div>
+                    </div>
+
+                    <div class="stats-item">
+                        <div class="stats-item__wreath">
+                            <img src="assets/images/leaf.png" alt="Wreath">
+                        </div>
+                        <div class="stats-item__content">
+                            <strong class="stats-item__number">17 Cities</strong>
+                            <span class="stats-item__highlight">Across the</span>
+                            <span class="stats-item__label">Globe</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Participating Header -->
+                <div class="section-header">
+                    <h2 class="section-title">Participating Schools</h2>
+                </div>
+
+                <!-- Logistics Grid (Static) -->
+                <div class="logos-grid">
+                <!-- Row 1 -->
+                <div class="logo-card">
+                    <img src="assets/images/harrow.png" alt="Harrow International School">
+                </div>
+                <div class="logo-card">
+                    <img src="assets/images/shrewsbury.png" alt="Shrewsbury International School">
+                </div>
+                <div class="logo-card">
+                    <img src="assets/images/kings.png" alt="King's College India">
+                </div>
+                <div class="logo-card">
+                    <img src="https://t2.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http://woodstockschool.in&size=128" alt="Woodstock School">
+                </div>
+                <div class="logo-card">
+                    <img src="assets/images/aga.png" alt="Aga Khan Academy">
+                </div>
+                <div class="logo-card">
+                    <img src="assets/images/tibs.png" alt="TISB">
+                </div>
+
+                <!-- Row 2 (Repeated) -->
+                <div class="logo-card">
+                    <img src="assets/images/harrow.png" alt="Harrow International School">
+                </div>
+                <div class="logo-card">
+                    <img src="assets/images/shrewsbury.png" alt="Shrewsbury International School">
+                </div>
+                <div class="logo-card">
+                    <img src="assets/images/kings.png" alt="King's College India">
+                </div>
+                <div class="logo-card">
+                    <img src="https://t2.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http://woodstockschool.in&size=128" alt="Woodstock School">
+                </div>
+                <div class="logo-card">
+                    <img src="assets/images/aga.png" alt="Aga Khan Academy">
+                </div>
+                <div class="logo-card">
+                    <img src="assets/images/tibs.png" alt="TISB">
+                </div>
+            </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Choose the School Section -->
+    <section class="choose-school">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Choose the School That Fits You Best</h2>
+            </div>
+            
+            <div class="choose-grid">
+                <!-- Card 1 -->
+                <div class="choose-card">
+                    <img src="assets/images/preschool.png" alt="Pre-Schools" class="choose-card__bg">
+                    <div class="choose-card__content">
+                        <h3 class="choose-card__title">Pre-Schools & Early Learning Centres</h3>
+                        <p class="choose-card__desc">Nurturing foundational skills for toddlers and pre-primary children.</p>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="choose-card">
+                    <img src="assets/images/cbse.png" alt="K-12 CBSE Schools" class="choose-card__bg">
+                    <div class="choose-card__content">
+                        <h3 class="choose-card__title">K-12 CBSE Day Schools</h3>
+                        <p class="choose-card__desc">Reputed schools offering complete schooling from Kindergarten to Grade 12.</p>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="choose-card">
+                    <img src="assets/images/heritage.png" alt="Heritage Schools" class="choose-card__bg">
+                    <div class="choose-card__content">
+                        <h3 class="choose-card__title">Heritage to New-Age Schools</h3>
+                        <p class="choose-card__desc">Time-tested schools to innovative pedagogy, tech enabled, future-ready schools</p>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="choose-card">
+                    <img src="assets/images/international.png" alt="International Schools" class="choose-card__bg">
+                    <div class="choose-card__content">
+                        <h3 class="choose-card__title">International Curriculum Schools</h3>
+                        <p class="choose-card__desc">Offering IB, Cambridge, Finnish and other global curricula with a global learning environment.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </main>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/hero.js"></script>
+</body>
+</html>
