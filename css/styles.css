@@ -95,8 +95,9 @@
     height: max-content; /* Ensure transform uses full height */
 }
 
+
 /* Pause on hover */
-.hero__visual-col:hover .hero__image-column {
+.hero__image-column:hover {
     animation-play-state: paused;
 }
 
