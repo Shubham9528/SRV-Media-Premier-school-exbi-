@@ -91,6 +91,44 @@ const setupSlider = (trackId, prevBtnId, nextBtnId, cardSelector, dotsId = null)
         currentIndex = 0;
         updateSlider();
     });
+
+    // Touch Swipe Support
+    let startX = 0;
+    let endX = 0;
+
+    track.addEventListener('touchstart', (e) => {
+        startX = e.touches[0].clientX;
+        endX = startX;
+    }, { passive: true });
+
+    track.addEventListener('touchmove', (e) => {
+        endX = e.touches[0].clientX;
+    }, { passive: true });
+
+    track.addEventListener('touchend', () => {
+        if (!startX || !endX) return;
+        const diff = startX - endX;
+        const threshold = 50; // Minimum distance swipe
+
+        if (Math.abs(diff) > threshold) {
+            const currentCards = track.querySelectorAll(cardSelector);
+            if (diff > 0) {
+                // Next
+                if (currentIndex < currentCards.length - 1) {
+                    currentIndex++;
+                    updateSlider();
+                }
+            } else {
+                // Prev
+                if (currentIndex > 0) {
+                    currentIndex--;
+                    updateSlider();
+                }
+            }
+        }
+        startX = 0;
+        endX = 0;
+    });
 };
 
 document.addEventListener('DOMContentLoaded', () => {
