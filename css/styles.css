@@ -360,12 +360,12 @@
     background: #ffffff;
     border: 1px solid #e5e7eb;
     border-radius: 4px; /* Using original border style */
-    padding: 1rem;
+    padding: 0.5rem; 
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 120px;
-    width: 200px; /* Fixed width */
+    height: 140px; 
+    width: 240px; 
     flex-shrink: 0;
     transition: transform 0.3s, box-shadow 0.3s;
 }
