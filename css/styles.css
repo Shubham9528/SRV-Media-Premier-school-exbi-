@@ -379,15 +379,15 @@
     max-width: 100%;
     max-height: 100%;
     object-fit: contain;
-    /* Removed grayscale logic */
+
 }
 
-/* Removed hover rule */
+
 
 @media (max-width: 768px) {
     .stats-grid { gap: 3rem; }
     .section-title { font-size: 2rem; }
-    /* Marquee handles mobile automatically by overflow/scroll */
+
 }
 
 /* Choose School Section */
