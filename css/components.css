@@ -90,10 +90,10 @@
 }
 
 .btn-submit__text {
-    background-color: rgba(255, 255, 255, 0.1); /* Translucent purple/glass effect */
+    background-color: rgba(255, 255, 255, 0.1);
     color: #ffffff;
     flex-grow: 1;
-    height: 56px; /* Matched to icon height */
+    height: 56px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -106,6 +106,31 @@
     border-left: none;
     margin-left: -4px;
     z-index: 1;
+    position: relative; /* For pseudo-element */
+    overflow: hidden; /* Contain fill */
+    transition: color 0.4s ease;
+}
+
+.btn-submit__text::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; width: 0; height: 100%;
+    background-color: #ffffff;
+    z-index: -1;
+    transition: width 0.4s ease;
+}
+
+.btn-submit:hover .btn-submit__text::before {
+    width: 100%; /* Fill from left */
+}
+
+.btn-submit:hover .btn-submit__text {
+    color: #2e0f5b; /* Dark Purple Text */
+}
+
+.btn-submit:hover .btn-submit__icon svg {
+    transform: rotate(45deg); /* Point Right */
+    transition: transform 0.4s ease;
 }
 
 
