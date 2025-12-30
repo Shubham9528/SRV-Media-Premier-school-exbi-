@@ -17,6 +17,7 @@
     -->
 </head>
 <body>
+    <a href="#main" class="skip-link">Skip to main content</a>
 
     <header class="navbar">
         <nav class="container navbar__container">
@@ -37,7 +38,7 @@
         </nav>
     </header>
 
-    <main>
+    <main id="main">
         <section class="hero">
             <div class="container">
                 <div class="hero__content-grid">
@@ -325,10 +326,10 @@
             <div class="container">
                 <h2 class="section-title features-title">What Makes This Exhibition a Must-Visit</h2>
                 
-                <div class="features-slider-wrapper">
-                    <div class="features-track" id="featuresTrack">
+                <div class="features-slider-wrapper" role="region" aria-roledescription="carousel" aria-label="Exhibition Features">
+                    <div class="features-track" id="featuresTrack" aria-live="polite">
                         <!-- Card 1 -->
-                        <div class="feature-card">
+                        <div class="feature-card" role="group" aria-roledescription="slide" aria-label="1 of 5">
                             <div class="feature-icon">
                                 <img src="assets/images/interact.png" alt="Interact" width="60">
                             </div>
@@ -337,7 +338,7 @@
                         </div>
 
                         <!-- Card 2 -->
-                        <div class="feature-card">
+                        <div class="feature-card" role="group" aria-roledescription="slide" aria-label="2 of 5">
                             <div class="feature-icon">
                                 <img src="assets/images/curriculum.png" alt="Curriculum" width="60">
                             </div>
@@ -346,7 +347,7 @@
                         </div>
 
                         <!-- Card 3 -->
-                        <div class="feature-card">
+                        <div class="feature-card" role="group" aria-roledescription="slide" aria-label="3 of 5">
                             <div class="feature-icon">
                                 <img src="assets/images/exclusive.png" alt="Exclusive Offers" width="60">
                             </div>
@@ -355,7 +356,7 @@
                         </div>
 
                         <!-- Card 4 -->
-                        <div class="feature-card">
+                        <div class="feature-card" role="group" aria-roledescription="slide" aria-label="4 of 5">
                             <div class="feature-icon">
                                 <img src="assets/images/explore.png" alt="Explore" width="60">
                             </div>
@@ -364,7 +365,7 @@
                         </div>
 
                         <!-- Card 5 -->
-                        <div class="feature-card">
+                        <div class="feature-card" role="group" aria-roledescription="slide" aria-label="5 of 5">
                             <div class="feature-icon">
                                 <img src="assets/images/addmission.png" alt="Counseling" width="60">
                             </div>
