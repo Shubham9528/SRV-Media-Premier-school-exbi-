@@ -1,14 +1,14 @@
 # Development Rules & Requirements
 
-- **Stack & Structure**: Use semantic HTML5 + custom CSS (no frameworks). Follow BEM naming and W3C validation.
-- **Accessibility**: WCAG 2.2 AA compliant, ARIA roles for sliders, skip-to-content, keyboard + screen reader support.
-- **Responsiveness**: It should be properly responsive to all the browsers and devices.
-- **Cross-browser**: Ensure compatibility with Chrome, Firefox, Safari, Edge (latest 2 versions) + iOS/Android browsers.
-- **Hero Section**: Dual-axis slider (horizontal & vertical), auto-play, swipe, pause on hover, and accessible controls.
-- **Participating School Logos**: Continuous sling animation; pause on hover/focus.
-- **Choose the School**: Four cards on desktop; responsive grid.
-- **Exhibition Section**: Entire section as a slider with 3–6 highlight cards; accessible.
-- **QA Criteria**: Validate HTML/CSS, accessibility via axe, test on key devices.
+- [x] **Stack & Structure**: Use semantic HTML5 + custom CSS (no frameworks). Follow BEM naming and W3C validation.
+- [x] **Accessibility**: WCAG 2.2 AA compliant, ARIA roles for sliders, skip-to-content, keyboard + screen reader support.
+- [x] **Responsiveness**: It should be properly responsive to all the browsers and devices
+- [x] **Cross-browser**: Ensure compatibility with Chrome, Firefox, Safari, Edge (latest 2 versions) + iOS/Android browsers.
+- [x] **Hero Section**: Dual-axis slider (horizontal & vertical), auto-play, swipe, pause on hover, and accessible controls. (Implemented: **Vertical CSS Infinite Scroll** - Bottom-to-Top, Pause on Hover).
+- [x] **Participating School Logos**: Continuous sling animation with alternating left–right and right–left flow; pause on hover/focus. (Implemented: **Marquee Animation**, Always Color).
+- [ ] **Choose the School**: Four cards on desktop; convert to mobile slider with swipe + pagination dots. (Currently: **Responsive Grid** - 2 Cols on Mobile).
+- [x] **Exhibition Section**: Entire section as a slider with 3–6 highlight cards; accessible, consistent height, auto-play optional.
+- [ ] **QA Criteria**: Validate HTML/CSS, accessibility via axe, test on key devices, animations honor prefers-reduced-motion.
 
 ---
 
