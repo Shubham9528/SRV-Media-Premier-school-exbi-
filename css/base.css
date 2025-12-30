@@ -2,17 +2,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
 
 body {
-    font-family: var(--font-primary);
-    background-color: var(--color-bg-primary);
-    color: var(--color-text-primary);
+    font-family: 'Outfit', sans-serif;
+    background-color: #1e103f;
+    color: #ffffff;
     overflow-x: hidden;
     padding-top: 80px; /* Offset for fixed navbar */
 }
 
 .container {
-    max-width: var(--container-width);
+    max-width: 1440px;
     margin: 0 auto;
-    padding: 0 var(--spacing-md);
+    padding: 0 1.5rem;
 }
 
 .visually-hidden {
