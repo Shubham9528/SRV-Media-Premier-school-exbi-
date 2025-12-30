@@ -19,9 +19,22 @@ const setupSlider = (trackId, prevBtnId, nextBtnId, cardSelector, dotsId = null)
             dot.classList.add('slider-dot');
             if (index === 0) dot.classList.add('active');
             dot.setAttribute('aria-label', `Go to slide ${index + 1}`);
+            dot.setAttribute('role', 'button');
+            dot.setAttribute('tabindex', '0');
+            
+            // Click Event
             dot.addEventListener('click', () => {
                 currentIndex = index;
                 updateSlider();
+            });
+
+            // Keyboard Event
+            dot.addEventListener('keydown', (e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    currentIndex = index;
+                    updateSlider();
+                }
             });
             dotsContainer.appendChild(dot);
         });
