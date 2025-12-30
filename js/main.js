@@ -147,4 +147,15 @@ document.addEventListener('DOMContentLoaded', () => {
             navbar.classList.remove('scrolled');
         }
     });
+
+
+    // Form Submission
+    const form = document.querySelector('form'); // Select first form (Hero)
+    if (form) {
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+           alert('Form submitted successfully!');
+           form.reset();
+        });
+    }
 });
