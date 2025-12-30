@@ -256,42 +256,86 @@
             <div class="section-header">
                 <h2 class="section-title">Choose the School That Fits You Best</h2>
             </div>
-            
-            <div class="choose-grid">
-                <!-- Card 1 -->
-                <div class="choose-card">
-                    <img src="assets/images/preschool.png" alt="Pre-Schools" class="choose-card__bg">
-                    <div class="choose-card__content">
-                        <h3 class="choose-card__title">Pre-Schools & Early Learning Centres</h3>
-                        <p class="choose-card__desc">Nurturing foundational skills for toddlers and pre-primary children.</p>
+            <div class="choose-slider-wrapper" role="region" aria-roledescription="carousel" aria-label="School Categories">
+                <div class="choose-track" id="chooseTrack" aria-live="polite">
+                    <!-- Card 1 -->
+                    <div class="choose-card" role="group" aria-roledescription="slide" aria-label="1 of 7">
+                        <img src="assets/images/preschool.png" alt="Pre-Schools" class="choose-card__bg">
+                        <div class="choose-card__content">
+                            <h3 class="choose-card__title">Pre-Schools & Early Learning Centres</h3>
+                            <p class="choose-card__desc">Nurturing foundational skills for toddlers and pre-primary children.</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="choose-card" role="group" aria-roledescription="slide" aria-label="2 of 7">
+                        <img src="assets/images/cbse.png" alt="K-12 CBSE Schools" class="choose-card__bg">
+                        <div class="choose-card__content">
+                            <h3 class="choose-card__title">K-12 CBSE Day Schools</h3>
+                            <p class="choose-card__desc">Reputed schools offering complete schooling from Kindergarten to Grade 12.</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="choose-card" role="group" aria-roledescription="slide" aria-label="3 of 7">
+                        <img src="assets/images/heritage.png" alt="Heritage Schools" class="choose-card__bg">
+                        <div class="choose-card__content">
+                            <h3 class="choose-card__title">Heritage to New-Age Schools</h3>
+                            <p class="choose-card__desc">Time-tested schools to innovative pedagogy, tech enabled, future-ready schools</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="choose-card" role="group" aria-roledescription="slide" aria-label="4 of 7">
+                        <img src="assets/images/international.png" alt="International Schools" class="choose-card__bg">
+                        <div class="choose-card__content">
+                            <h3 class="choose-card__title">International Curriculum Schools</h3>
+                            <p class="choose-card__desc">Offering IB, Cambridge, Finnish and other global curricula with a global learning environment.</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 5 -->
+                    <div class="choose-card" role="group" aria-roledescription="slide" aria-label="5 of 7">
+                        <img src="https://images.unsplash.com/photo-1541829070764-84a7d30dd3f3?auto=format&fit=crop&w=800&q=80" alt="Boarding Schools" class="choose-card__bg">
+                        <div class="choose-card__content">
+                            <h3 class="choose-card__title">Residential & Boarding Schools</h3>
+                            <p class="choose-card__desc">Holistic development in a 24/7 learning environment aiming for independence.</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 6 -->
+                    <div class="choose-card" role="group" aria-roledescription="slide" aria-label="6 of 7">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80" alt="Special Needs Schools" class="choose-card__bg">
+                        <div class="choose-card__content">
+                            <h3 class="choose-card__title">Special Educational Needs (SEN)</h3>
+                            <p class="choose-card__desc">Specialized support and inclusive environments for unique learning requirements.</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 7 -->
+                    <div class="choose-card" role="group" aria-roledescription="slide" aria-label="7 of 7">
+                        <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=800&q=80" alt="Single-Gender Schools" class="choose-card__bg">
+                        <div class="choose-card__content">
+                            <h3 class="choose-card__title">Single-Gender Schools</h3>
+                            <p class="choose-card__desc">Focused environments catering to specific developmental needs of boys or girls.</p>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Card 2 -->
-                <div class="choose-card">
-                    <img src="assets/images/cbse.png" alt="K-12 CBSE Schools" class="choose-card__bg">
-                    <div class="choose-card__content">
-                        <h3 class="choose-card__title">K-12 CBSE Day Schools</h3>
-                        <p class="choose-card__desc">Reputed schools offering complete schooling from Kindergarten to Grade 12.</p>
-                    </div>
-                </div>
-
-                <!-- Card 3 -->
-                <div class="choose-card">
-                    <img src="assets/images/heritage.png" alt="Heritage Schools" class="choose-card__bg">
-                    <div class="choose-card__content">
-                        <h3 class="choose-card__title">Heritage to New-Age Schools</h3>
-                        <p class="choose-card__desc">Time-tested schools to innovative pedagogy, tech enabled, future-ready schools</p>
-                    </div>
-                </div>
-
-                <!-- Card 4 -->
-                <div class="choose-card">
-                    <img src="assets/images/international.png" alt="International Schools" class="choose-card__bg">
-                    <div class="choose-card__content">
-                        <h3 class="choose-card__title">International Curriculum Schools</h3>
-                        <p class="choose-card__desc">Offering IB, Cambridge, Finnish and other global curricula with a global learning environment.</p>
-                    </div>
+                <div class="slider-dots" id="chooseDots"></div>
+                <div class="slider-controls">
+                    <button class="slider-btn prev-dark" id="choosePrev" aria-label="Previous">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="19" y1="12" x2="5" y2="12"></line>
+                            <polyline points="12 19 5 12 12 5"></polyline>
+                        </svg>
+                    </button>
+                    <button class="slider-btn next-dark" id="chooseNext" aria-label="Next">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </button>
                 </div>
             </div>
         </div>

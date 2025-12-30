@@ -345,20 +345,27 @@
 
 /* Choose School Section */
 .choose-school {
-    padding: 4rem 0 6rem;
+    padding: 4rem 0 3rem; /* Reduced bottom from 6rem */
     background-color: #ffffff; /* Explicitly white */
 }
 
-.choose-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+/* Slider Layout for Choose School */
+.choose-slider-wrapper {
+    overflow: hidden;
+    padding: 1rem 0;
+}
+
+.choose-track {
+    display: flex;
     gap: 1.5rem;
-    margin-top: 3rem;
+    transition: transform 0.5s ease-in-out;
 }
 
 .choose-card {
     position: relative;
-    height: 400px;
+    height: 400px; /* Fixed height */
+    min-width: 280px;
+    flex: 1; /* Default flex */
     border-radius: 16px;
     overflow: hidden;
     cursor: pointer;
@@ -403,21 +410,54 @@
     color: rgba(255, 255, 255, 0.9);
 }
 
-/* Responsive for Choose Section */
+/* Slider Dots */
+.slider-dots {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem; /* Small gap to buttons */
+}
+
+.slider-dot {
+    width: 10px; height: 10px;
+    background-color: #EAD6FF;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.slider-dot.active {
+    background-color: #2e0f5b;
+    transform: scale(1.2);
+}
+
+/* Dark Buttons for White Background */
+.slider-btn.prev-dark, .slider-btn.next-dark {
+    border-color: #2e0f5b;
+    color: #2e0f5b;
+}
+
+.slider-btn.prev-dark:hover, .slider-btn.next-dark:hover {
+    background: #2e0f5b;
+    color: #ffffff;
+}
+
+/* Responsive Card Widths for Choose Slider */
+@media (min-width: 1024px) {
+    .choose-card {
+        min-width: 23%; /* 4 cards visible */
+    }
+}
 @media (max-width: 1024px) {
-    .choose-grid {
-        grid-template-columns: repeat(2, 1fr);
+    .choose-card {
+        min-width: 45%; /* 2 cards visible */
     }
 }
 @media (max-width: 600px) {
-    /* Grid stays 2 cols */
     .choose-card {
-        height: 320px;
-    }
-}
-@media (max-width: 480px) {
-    .choose-grid {
-        grid-template-columns: 1fr;
+        min-width: 85%; /* 1 card visible */
+        height: 350px; /* Smaller height mobile */
     }
 }
 
@@ -587,7 +627,7 @@
     display: flex;
     justify-content: center;
     gap: 1rem;
-    margin-top: 3rem;
+    margin-top: 0.5rem; /* Reduced from 3rem */
 }
 
 .slider-btn {
