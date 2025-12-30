@@ -86,4 +86,14 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Choose School Slider (With dots)
     setupSlider('chooseTrack', 'choosePrev', 'chooseNext', '.choose-card', 'chooseDots');
+
+    // Navbar Scroll Effect
+    const navbar = document.querySelector('.navbar');
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        }
+    });
 });

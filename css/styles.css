@@ -4,7 +4,8 @@
 .navbar {
     background-color: #ffffff;
     height: 80px;
-    position: relative;
+    position: fixed; /* Fixed position */
+    top: 0; left: 0; width: 100%; /* Full width at top */
     z-index: 100;
     box-shadow: 0 1px 0 rgba(0,0,0,0.05);
 }
@@ -21,14 +22,57 @@
     position: relative;
     top: 25px; /* Overhangs the hero section */
     z-index: 10;
-    /* Removed background, padding, shadow for clean look */
+    transition: all 0.3s ease; /* Smooth transition */
 }
 
 .logo-img {
-    height: 140px; /* Increased height */
+    height: 155px; /* Increased height */
     width: auto;
     display: block;
     border-radius: 8px;
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+/* Scrolled State */
+.navbar.scrolled .navbar__logo {
+    top: 0;
+}
+
+.navbar.scrolled .logo-img {
+    height: 95px; /* Slightly bigger (fits in 80px) */
+}
+
+.navbar.scrolled {
+    background-color: var(--color-bg-primary); /* Matches Hero Background */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Scrolled Button Style */
+.navbar.scrolled .btn-register {
+    background-color: #ffffff;
+    border: none;
+    box-shadow: none;
+}
+
+.navbar.scrolled .btn-register__icon {
+    background-color: transparent;
+    color: #2e0f5b; /* Blue/Purple Text */
+    order: 2; /* Move arrow to right */
+    width: auto; padding-right: 1.5rem; /* Adjust spacing */
+}
+
+.navbar.scrolled .btn-register__text {
+    background-color: transparent;
+    border: none;
+    color: #2e0f5b;
+    order: 1; /* Text first */
+    padding-right: 0.5rem;
+}
+
+.navbar.scrolled .btn-register__icon svg {
+    stroke: #2e0f5b; /* Icon color */
+    transform: rotate(45deg); /* Point Right */
+    transition: transform 0.3s;
 }
 
 /* Hero Section */
@@ -75,7 +119,7 @@
     font-weight: 500;
 }
 
-/* Hero Visuals (Center) - The Image Sliders */
+
 /* Hero Visuals (Center) - The Image Sliders */
 .hero__visual-col {
     height: 500px;
