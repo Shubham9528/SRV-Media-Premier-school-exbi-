@@ -45,7 +45,7 @@
 }
 
 .navbar.scrolled {
-  background-color: var(--color-bg-primary); /* Matches Hero Background */
+  background: linear-gradient(90deg, #1e103f 60%, #4a2c75 100%);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
